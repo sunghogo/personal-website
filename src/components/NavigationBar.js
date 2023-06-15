@@ -1,17 +1,22 @@
-import Typography from "./Typography";
+import Link from "./Link";
 
 function NavigationBar() {
-  const sections = ["About", "Skills", "Projects", "Contact"];
+  const links = [
+    { label: `About`, path: `/` },
+    { label: `Skills`, path: `/skills` },
+    { label: `Projects`, path: `/projects` },
+    { label: `Contact`, path: `/contact` },
+  ];
 
-  const renderedSections = sections.map((section) => (
-    <Typography key={section} fontSize={"sm"}>
-      {section}
-    </Typography>
+  const renderedLinks = links.map((link) => (
+    <Link key={link.label} to={link.path} activeClassName="font-bold">
+      {link.label}
+    </Link>
   ));
 
   return (
     <nav className="fixed inset-x-1/4 bottom-4 flex items-center justify-between mx-auto px-4 py-2 bg-slate-300 border rounded-full">
-      {renderedSections}
+      {renderedLinks}
     </nav>
   );
 }
