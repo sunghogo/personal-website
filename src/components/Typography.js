@@ -11,15 +11,27 @@ function Typography({
   p,
   strong,
   em,
+  fontSize = "base",
   ...rest
 }) {
-  const classNames = className(
-    "text-sm sm:text-base md:text-lg",
-    rest.className
-  );
+  const size =
+    fontSize === "base"
+      ? "text-sm sm:text-base md:text-lg"
+      : fontSize === "lg"
+      ? "text-base sm:text-lg md:text-xl"
+      : fontSize === "2xl"
+      ? "text-lg sm:text-xl md:text-2xl"
+      : fontSize === "3xl"
+      ? "text-xl sm:text-2xl md:text-3xl"
+      : fontSize === "4xl"
+      ? "text-2xl sm:text-3xl md:text-4xl"
+      : fontSize === "5xl"
+      ? "text-3xl sm:text-4xl md:text-5xl"
+      : "text-4xl sm:text-5xl md:text-6xl";
+
+  const classNames = className(size, rest.className);
 
   let text = children;
-
   if (strong) text = <strong>{text}</strong>;
   if (em) text = <em>{text}</em>;
   if (h1) text = <h1>{text}</h1>;

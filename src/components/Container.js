@@ -4,9 +4,11 @@ function Container() {
   return (
     <div className="container mx-auto my-4 px-8 py-4 border rounded-lg shadow-lg bg-white">
       <Typography
-        className="header-image font-montserrat-header mb-4 bg-red-500 flex justify-center text-2xl sm:text-3xl md:text-4xl"
+        className="header-image font-montserrat-header mb-4 bg-red-500 flex justify-center"
         strong
         em
+        h1
+        fontSize={"3xl"}
       >
         Section
       </Typography>
