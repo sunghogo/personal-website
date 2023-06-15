@@ -1,5 +1,14 @@
+import Container from "./components/Container";
+
 function App() {
-  return <div className="drop-shadow-xl bg-blue-500 text-xl">App</div>;
+  return (
+    <div className="background-image px-8">
+      <Container />
+      <Container />
+      <Container />
+      <Container />
+    </div>
+  );
 }
 
 export default App;
