@@ -6,6 +6,7 @@ function Container() {
       <Typography
         className="font-montserrat-header mb-4 bg-red-500 flex justify-center text-3xl sm:text-4xl md:text-5xl"
         strong
+        h1
       >
         Section
       </Typography>
