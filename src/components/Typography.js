@@ -15,7 +15,9 @@ function Typography({
   ...rest
 }) {
   const size =
-    fontSize === "base"
+    fontSize === "sm"
+      ? "text-xs sm:text-sm md:text-base"
+      : fontSize === "base"
       ? "text-sm sm:text-base md:text-lg"
       : fontSize === "lg"
       ? "text-base sm:text-lg md:text-xl"
