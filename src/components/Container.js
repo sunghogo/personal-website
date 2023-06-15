@@ -1,6 +1,6 @@
 function Container() {
   return (
-    <div className="container mx-auto my-4 px-8 py-4 border rounded-lg shadow-lg bg-white font-open-sans text-lg">
+    <div className="container mx-auto my-4 px-8 py-4 border rounded-lg shadow-lg bg-white font-open-sans text-sm sm:text-base md:text-lg">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed mattis
       ante, quis pretium leo. Quisque nec neque nec ante finibus sagittis a sed
       arcu. Maecenas molestie sollicitudin lectus, ac elementum justo.
