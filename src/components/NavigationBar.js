@@ -4,7 +4,7 @@ function NavigationBar() {
   const sections = ["About", "Skills", "Projects", "Contact"];
 
   const renderedSections = sections.map((section) => (
-    <Typography key={section} fontSize={"base"}>
+    <Typography key={section} fontSize={"sm"}>
       {section}
     </Typography>
   ));
