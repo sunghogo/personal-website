@@ -4,9 +4,9 @@ function Container() {
   return (
     <div className="container mx-auto my-4 px-8 py-4 border rounded-lg shadow-lg bg-whiter">
       <Typography
-        className="font-montserrat-header mb-4 bg-red-500 flex justify-center text-3xl sm:text-4xl md:text-5xl"
+        className="font-montserrat-header mb-4 bg-red-500 flex justify-center text-2xl sm:text-3xl md:text-4xl"
         strong
-        h1
+        em
       >
         Section
       </Typography>
