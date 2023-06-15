@@ -2,9 +2,9 @@ import Typography from "./Typography";
 
 function Container() {
   return (
-    <div className="container mx-auto my-4 px-8 py-4 border rounded-lg shadow-lg bg-whiter">
+    <div className="container mx-auto my-4 px-8 py-4 border rounded-lg shadow-lg bg-white">
       <Typography
-        className="font-montserrat-header mb-4 bg-red-500 flex justify-center text-2xl sm:text-3xl md:text-4xl"
+        className="header-image font-montserrat-header mb-4 bg-red-500 flex justify-center text-2xl sm:text-3xl md:text-4xl"
         strong
         em
       >
