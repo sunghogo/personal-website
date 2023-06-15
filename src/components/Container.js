@@ -1,18 +1,12 @@
 import Typography from "./Typography";
+import Header from "./Header";
 
 function Container() {
   return (
     <div className="container mx-auto my-4 px-8 py-4 border-double border-4 rounded-lg borderr-gray-200 shadow-lg bg-white">
-      <Typography
-        className="header-image font-montserrat-header mb-4 flex justify-center border border-2 borderr-gray-100 rounded-full w-1/2 mx-auto"
-        strong
-        em
-        h1
-        fontSize={"3xl"}
-      >
-        Section
-      </Typography>
-      <Typography className="font-open-sans">
+      <Header>Section</Header>
+
+      <Typography className="font-open-sans text-gray-700">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed mattis
         ante, quis pretium leo. Quisque nec neque nec ante finibus sagittis a
         sed arcu. Maecenas molestie sollicitudin lectus, ac elementum justo.
