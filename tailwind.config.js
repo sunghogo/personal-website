@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "open-sans": ["Open Sans", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+        "open-sans": ["Lato", "Open Sans", "sans-serif"],
       },
     },
   },
